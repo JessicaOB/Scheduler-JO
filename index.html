@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Links for bootstrap, fontawesome(used for button icon), google fonts, and CSS file-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
@@ -14,62 +15,64 @@
 </head>
 
 <body>
+  <!-- Jumbotron contains title, subtitle, and date and time-->
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <!-- Timeblocks here -->
-    <ol id="selectable">
+    <!-- Timeblocks here, each contains an assigned hour, a textarea for user input, and a save button -->
+    <ol>
       <li class="row">
         <p class="hour col-1">9am</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="9" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">10am</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="10" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">11am</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="11" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">12am</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="12" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">1pm</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="13" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">2pm</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="14" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">3pm</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="15" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">4pm</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="16" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
       <li class="row">
         <p class="hour col-1">5pm</p>
-        <textarea class="form-control col-10" id="exampleFormControlTextarea1" rows="2"></textarea>
+        <textarea class="time-block form-control col-10" id="17" rows="2"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </li>
     </ol>
   </div>
 
+  <!-- Script tags for jquery, moment.js, and js file-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
